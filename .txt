@@ -1,0 +1,14 @@
+A exteção de um arquivo TypeScript é .ts
+Um arquivo TypeScript pode possuir chamadas do DOM e comandos em JavaScript
+O Parcel-Bundle é um modulo que ajuda no desenvolvimento commTypeScript
+O TypeScript pode ser usado no console do navegador
+O comando tcs nomeArquivo.ts converte um arquivo .ts para .js
+No TypeScript é possivel tipar as variaveis
+O VsCode reconhece quando usamos dados de tipos diferentes para usar uma função em TypeScript
+Quando estamos desenvolvendo com TypeScript tambem temos direito a usar types e Interfaces
+As Interfaces podem ser herdadas por um objeto
+Podemos filtrar propriedades nos Interfaces Ex: Terrestre | Aquatico
+As Interfaces podem ser Extendidadas Ex: Felinos
+Boa Pratica usar I nas Interfaces Ex: IAnimal, IFelino
+O type tem uma fução parecida com o Interface
+O type é usado normalmente para jutar Interfaces
