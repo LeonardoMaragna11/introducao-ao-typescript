@@ -5,9 +5,12 @@
   "name": "introducao-ao-typescript",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "typescript": "^4.6.4"
+  },
   "scripts": {
-    "test": "start"
+    "test": "start",
+    "start": "parcel index.html"
   },
   "repository": {
     "type": "git",
