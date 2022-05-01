@@ -52,17 +52,42 @@
 
 // preenchelista([1,2,3,4,5], 6)
 
-interface IUsuario {
-    id: string
-    email: string
-    cargo ?: 'funcionário' | 'gerente' | 'coordenador' | 'supervisor'  
+// interface IUsuario {
+//     id: string
+//     email: string
+//     cargo ?: 'funcionário' | 'gerente' | 'coordenador' | 'supervisor'  
+// }
+
+
+// function redirecione(usuario:IUsuario){
+//     if(usuario.cargo){
+//         // Redirecionar(usuario.cargo)
+//     }
+
+//     // Redirecionar para a area do usuario
+// } 
+
+
+interface Cachorro{
+    nome:string,
+    idade:number,
+    parqueFavorito?:string,
+}
+
+type CachorroSomenteLeitura={
+    readonly [K in keyof Cachorro]-?: Cachorro[K]
 }
 
 
-function redirecione(usuario:IUsuario){
-    if(usuario.cargo){
-        // Redirecionar(usuario.cargo)
-    }
-
-    // Redirecionar para a area do usuario
-} 
+class MeuCachorro implements CachorroSomenteLeitura{
+    idade;
+    nome;   
+    parqueFavorito;
+    constructor(nome, idade){
+        this.idade = idade
+        this.nome = nome
+        this.parqueFavorito
+    } 
+}
+const cao = new MeuCachorro('Leo', 17)
+console.log(cao.idade);
