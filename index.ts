@@ -30,8 +30,16 @@
 //     executarRugido:()=>{console.log('Miau')}
 // } 
 
-type IAnimal={
-    nome:string,
-    tipo:'terrestre' | 'aquatico',
-    executarRugido():void
-}
+// type IAnimal={
+//     nome:string,
+//     tipo:'terrestre' | 'aquatico',
+//     executarRugido():void
+// }
+
+const input = document.getElementById('input') as HTMLInputElement
+input.addEventListener('input', (event)=>{
+    // console.log('Digitei');
+    const i = event.currentTarget as HTMLInputElement
+    console.log(i.value)
+    // console.log(event.currentTarget);
+})
